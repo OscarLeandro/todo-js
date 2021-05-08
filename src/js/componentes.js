@@ -8,6 +8,7 @@ const txtInput      = document.querySelector('.new-todo');
 const btnBorrar     = document.querySelector('.clear-completed');
 const ulFiltros     = document.querySelector('.filters');
 const anchorFiltros = document.querySelectorAll('.filtro');
+export const countTodo = document.querySelector('.todo-count'); 
 
 export const crearTodoHtml = (todo) => {
 
@@ -97,13 +98,13 @@ ulFiltros.addEventListener('click',(event)=>{
                     elemento.classList.add('hidden');
                     
                 }
-                break
+                break;
             case 'Completados':
                 if(!completado){
                     elemento.classList.add('hidden');
                     
                 }
-                break    
+                break; 
         }
     }
 
